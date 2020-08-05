@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <div class="forcast"></div>
+   <form onsubmit="save(event)" >
+      <div>coose bg color: </div>
+      <input type="color" name="bgColor" id="">
+      <br />
+      <div>whats your bd: </div>
+      <input type="date" name="bdDate" id="">
+      <div>whats your birth time: </div>
+      <input type="time" name="bdTime" id="">
+      <div>whats your email: </div>
+      <input type="email" name="email" id="" >
+      <div>how old are you: </div>
+      <input type="range" name="age" min="18" max="120" onchange="showAge(this.value);">
+      <span class="age">70</span>
+      <div>click to save: </div>
+      <button > save </button>
+   </form>
+   <script src="js/userPrefService.js"></script>
+   <script src="js/placeService.js"></script>
+</body>
+
+</html>
